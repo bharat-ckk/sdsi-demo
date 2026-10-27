@@ -1,0 +1,11 @@
+{
+  "jobs": [
+    { "id": "A", "duration": 3, "dependsOn": [] },
+    { "id": "B", "duration": 4, "dependsOn": [] },
+    { "id": "C", "duration": 2, "dependsOn": ["A"] },
+    { "id": "D", "duration": 5, "dependsOn": ["A", "B"] },
+    { "id": "E", "duration": 1, "dependsOn": ["C", "D"] },
+    { "id": "F", "duration": 3, "dependsOn": ["D"] },
+    { "id": "G", "duration": 2, "dependsOn": ["E", "F"] }
+  ]
+}
